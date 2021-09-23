@@ -1,44 +1,45 @@
 #cart-content {
-    padding: 5rem 0;
-    display: flex;
-    flex-direction: column;
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .btn-checkout {
-    margin: 2rem 0 0 0;
-    background-color: black;
-    color: white;
+  margin: 2rem 0 0 0;
+  background-color: black;
+  color: white;
 }
-@media(min-width: 50rem){
-    #cart-content {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    #cart-info {
-        width: calc(75% - .5rem);
-    }
-    #cart-details {
-        position: sticky;
-        width: calc(25% - .5rem);
-        height: 100%;
-        padding: 1rem;
-        border: .1rem solid black;       
-    }
+@media (min-width: 50rem) {
+  #cart-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #cart-info {
+    width: calc(75% - 0.5rem);
+  }
+  #cart-details {
+    position: sticky;
+    top: 12rem;
+    width: calc(25% - 0.5rem);
+    height: 100%;
+    padding: 1rem;
+    border: 0.1rem solid black;
+  }
 }
 table {
-    width: 100%;
-    border-collapse: collapse;
+  width: 100%;
+  border-collapse: collapse;
 }
 tr {
-    border-collapse: collapse;
+  border-collapse: collapse;
 }
 table th,
 table td {
-    font-size: 1.6rem;
-    padding: 1rem .5rem;
-    text-align: left;
-    border: .1rem dashed #252525;
+  font-size: 1.6rem;
+  padding: 1rem 0.5rem;
+  text-align: left;
+  border: 0.1rem dashed #252525;
 }
 table tr td:first-child,
 table tr th:first-child {
@@ -52,38 +53,35 @@ table tr th:last-child {
   border-right: 0;
 }
 table input {
-    width: 100%;
+  width: 100%;
 }
 .modal-img {
-    height: 5rem;
-    width: 5rem;
+  height: 5rem;
+  width: 5rem;
 }
 .btns {
-    display: flex;
-    flex-direction: column;
-    padding: 3rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 0 0 0;
 }
-.btns a{
-    margin: .5rem 0;
-    width: 100%;
-    color: #fff;
-    color: var(--white);
-    background-color: green;
-    background-color: var(--green);
-
+.btns a {
+  margin: 0.5rem 0;
+  width: 100%;
+  color: #fff;
+  color: var(--white);
+  background-color: green;
+  background-color: var(--green);
 }
 .btns a:last-of-type {
-    background-color: red;
-    background-color: var(--red);
+  background-color: red;
+  background-color: var(--red);
 }
-@media(min-width:32rem){
-    .btns {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .btns a {
-        width: calc(50% - .5rem);
-    }
+@media (min-width: 32rem) {
+  .btns {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .btns a {
+    width: calc(50% - 0.5rem);
+  }
 }
-
-
