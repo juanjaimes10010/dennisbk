@@ -15,7 +15,9 @@
     text-decoration: none;
     list-style: none;
     border: none;
+    border-radius: 0;
 }
+
 
 html {
     font-size: 0.625rem;
@@ -66,9 +68,14 @@ img {
 }
 .container {
     margin: 0 auto;
-    max-width: 950px;
-    width: 90%;
+    max-width: 120rem;
+    width: 95%;
     padding: 8rem 0;
+}
+@media(min-width: 32rem){
+    .container {
+        width: 90%;
+    }
 }
 .flex {
     display: flex;
@@ -113,6 +120,7 @@ nav {
 
 nav > #logo {
     font-size: 3rem;
+    white-space: nowrap;
 }
 
 nav > ul {
@@ -142,7 +150,7 @@ nav > ul > li > a:hover {
 /*******************Hero*****************************/
 
 #hero {
-    padding: 5rem 0 0 0;
+    padding: 3rem 0 0 0;
     color: #fff;
     color: var(--white);
     background-color: #252525;
@@ -299,6 +307,8 @@ nav > ul > li > a:hover {
 } 
 /*********************contact**************************************/
 #contact {
+    color: #fff;
+    color: var(--white);
     background-color: #252525;
     background-color: var(--black);
 }
@@ -315,6 +325,8 @@ nav > ul > li > a:hover {
     background-color: #252525;
     background-color: var(--black);
     border-bottom: .2rem solid #fff;
+    color: #fff;
+    color: var(--white);
 }
 
 #contact form input[type="submit"] {
@@ -342,3 +354,4 @@ footer {
         width: calc(25% - .5rem);    
     }
 }
+
